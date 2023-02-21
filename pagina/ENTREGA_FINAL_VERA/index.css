@@ -1,0 +1,171 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+#encabezado{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: yellow;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    text-align: center;
+}
+
+#datos_vehiculo{
+    width: 98%;
+    height: 30%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid black;
+}
+.subtitulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#caja_inputs{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#input_cliente{
+    display: inline-block;
+}
+.separador{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 85%;
+    font-weight: bold;
+    display: inline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input_cliente{
+    display: inline-block;
+}
+.fecha{
+    display: inline;
+}
+.input_cliente-corto{
+    width: 50%;
+    display: inline-block;
+}
+#servicio_requerido{
+    width: 98%;
+    height: 30%;
+    padding: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid black;
+}
+#tabla{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 1%;
+}
+#botones{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: auto;
+    justify-content: space-evenly;
+    margin-left: 80%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+#agregar {
+    width: 40%;
+    height: 100%;
+}
+#borrar{
+    background-color: red;
+    color: white;
+    height: 18px;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:bold ;
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+.textarea{
+    width: 90%;
+    height: 30px;
+    height: auto;
+    border: none;
+    outline: none;
+    border:0.5px solid black ;
+    margin-bottom: 3px;
+    padding-left: 3px;
+}
+.div_tabla{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div-separador{
+    height: 10px;
+    width: 100%;
+
+}
+#PDF{
+    width: 10%;
+    padding: 5px;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    border: 0.5px black solid;
+    border-radius: 5px;
+    margin-left: 70%;
+}
+#fecha{
+    width: 98%;
+    height: auto;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#input_fecha{
+    outline: none;
+}
+#orden{
+    width:20%;
+    padding-left:10px ;
+}

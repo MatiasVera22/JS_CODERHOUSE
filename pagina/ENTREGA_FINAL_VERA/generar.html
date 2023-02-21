@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+        <div id="formulario">
+            <section id="encabezado">
+                <div class="logo">logo</div>
+                <div class="titulo"><h5>ORDEN DE TRABAJO</h5><span>EL VIENTO</span></div>
+                <div id="nro_orden">ORDEN: <input id="orden" type="number"></div>
+            </section>
+            <section id="fecha">
+                <label class="fecha" for="">FECHA:<input id="input_fecha" type="datetime-local"></label><label class="empresa" for="">CLIENTE: <select id="empresas">
+                                                                                                                                                     <option id="pecom"></option>
+                                                                                                                                                     <option id="seip" ></option>
+                                                                                                                                                     <option id="modal"></option>
+                                                                                                                                                     <option id="cam"></option>
+                                                                                                                                                    </select></label>
+            </section>
+            <section id="datos_vehiculo">
+                <h5 class="subtitulo">DATOS DEL VEHICULO :</h5>
+                <div id="caja_inputs">
+                    <label class="caja_inputs-label" for=""><h6>VEHICULO:</h6><input class="input_cliente" type="text"></label>
+                    <label class="caja_inputs-label" for=""><h6>INTERNO:</h6><input class="input_cliente-corto" type="text"></label>
+                    <label class="caja_inputs-label" for=""><h6>PATENTE:</h6><input class="input_cliente-corto" type="text"></label>
+                    <label class="caja_inputs-label" for=""><h6>KILOMETRAJE:</h6><input class="input_cliente-corto" type="text"></label>
+                </div>
+            </section>
+            <section id="servicio_requerido">
+                <h5 class="subtitulo">SERVICIO REQUERIDO :</h5>
+                <div id="tabla"></div>
+                <div id="botones">
+                    <button id="agregar" data-html2canvas-ignore="true">Agregar fila</button>
+                </div>
+                <div id="operario">
+                    <h5>OPERARIO ASIGNADO</h5>
+                    <input class="input_cliente" type="text">
+                </div>
+            </section>
+        </div>
+     <button id="PDF" data-html2canvas-ignore="true">DESCARGAR COMO PDF</button>
+     <script src="codigo.js"></script>
+    </body>
+</html>
